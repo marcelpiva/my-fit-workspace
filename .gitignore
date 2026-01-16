@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Database
+*.db
+*.sqlite3
+
+# Secrets
+*.pem
+*.key
+credentials.json
+firebase-credentials.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Flutter
+/app/.dart_tool/
+/app/.packages
+/app/build/
+/app/ios/Pods/
+/app/ios/.symlinks/
+/app/android/.gradle/
+/app/android/local.properties
+
+# Python
+/api/.venv/
+/api/__pycache__/
+/api/*.egg-info/
+/api/.pytest_cache/
+/api/.mypy_cache/
+/api/.ruff_cache/
+
+# Next.js
+/web/.next/
+/web/out/
+/web/node_modules/
