@@ -1,5 +1,7 @@
 # MyFit Workspace
 
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](CHANGELOG.md)
+
 White-label fitness platform for personal trainers, coaches, gyms, and fitness professionals.
 
 ## Overview
@@ -17,11 +19,11 @@ Users can have multiple roles (student, trainer, coach, gym owner) and belong to
 ## Repository Structure
 
 ```
-myfit/
-├── app/          # Flutter mobile app (myfit-app)
-├── api/          # FastAPI backend (myfit-api)
-├── web/          # Landing page - Next.js (myfit-web)
-├── docs/         # Documentation (myfit-docs)
+my-fit-workspace/
+├── my-fit-app/   # Flutter mobile app
+├── my-fit-web/   # Landing page - Next.js
+├── api/          # FastAPI backend
+├── docs/         # Documentation
 └── assets/       # Shared brand assets
 ```
 
@@ -49,11 +51,11 @@ myfit/
 
 ```bash
 # Clone the workspace
-git clone https://github.com/marcelpiva/myfit-workspace.git
-cd myfit-workspace
+git clone https://github.com/marcelpiva/my-fit-workspace.git
+cd my-fit-workspace
 
 # Setup Flutter app
-cd app
+cd my-fit-app
 flutter pub get
 
 # Setup API
@@ -63,7 +65,7 @@ source .venv/bin/activate  # or `.venv\Scripts\activate` on Windows
 pip install -e ".[dev]"
 
 # Setup Web
-cd ../web
+cd ../my-fit-web
 npm install
 ```
 
@@ -71,13 +73,13 @@ npm install
 
 ```bash
 # Run Flutter app
-cd app && flutter run
+cd my-fit-app && flutter run
 
 # Run API
 cd api && uvicorn src.main:app --reload
 
 # Run Web
-cd web && npm run dev
+cd my-fit-web && npm run dev
 ```
 
 ## Design System
