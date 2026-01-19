@@ -43,6 +43,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **myfit-app**: Added loading indicator for AI suggestion button
 
+- **myfit-app**: Muscle group validation for exercise techniques
+  - Super-Set requires antagonist muscle groups (Peito/Costas, Biceps/Triceps)
+  - Bi-Set/Tri-Set/Giant Set block antagonist muscles (only allow same area)
+  - Visual indicators for blocked exercises (orange border, ban icon, 50% opacity)
+  - Info banners showing required/blocked muscle groups
+  - Validation snackbars when tapping blocked exercises
+  - Reordered technique menu: Superset → Biset → Triset → Giantset
+
 ### Changed
 - Reorganized repository structure to use Git submodules
 - myfit-app, myfit-api, myfit-web are now separate repositories
