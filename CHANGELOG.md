@@ -8,6 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **myfit-web**: Mobile-responsive navigation with hamburger menu
+  - Desktop navigation hidden on mobile, replaced with hamburger menu
+  - Mobile menu with full navigation links and action buttons
+  - Language switcher simplified to flag-only on mobile
+  - Logo size reduced on small screens
+
+### Changed
+- **myfit-web**: Removed all "White-Label" references, replaced with "Completa/Complete"
+  - Updated page title, badges, and footer descriptions in all 3 languages (PT, EN, ES)
+  - Updated terms of service description
+
+### Fixed
+- **myfit-web**: Header buttons "Get Started" and "Sign in" no longer break to multiple lines on mobile
+  - Added `whitespace-nowrap` to prevent text wrapping
+  - Adjusted button padding for better mobile fit
+
+### Added
 - **myfit-app**: ExecutionMode toggle for exercise configuration
   - Three modes: Repetições (Reps), Isometria (Isometric), Combinado (Combined)
   - Automatic mode detection when editing existing exercises

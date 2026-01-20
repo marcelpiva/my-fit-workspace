@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](CHANGELOG.md)
 
-White-label fitness platform for personal trainers, coaches, gyms, and fitness professionals.
+Complete fitness platform for personal trainers, coaches, gyms, and fitness professionals.
 
 ## Overview
 
