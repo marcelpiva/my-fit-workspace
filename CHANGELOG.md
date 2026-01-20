@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-01-20
+
+### Added
+- **myfit-app**: ExecutionMode toggle for exercise configuration
+  - Three modes: Repetições (Reps), Isometria (Isometric), Combinado (Combined)
+  - Automatic mode detection when editing existing exercises
+  - Mode-specific fields and time presets
+
+- **myfit-app**: Exercise group notification when changing workout muscle groups
+  - Shows informational alert when exercises don't match selected groups
+  - Exercises are kept (not deleted) - informational notice only
+
+- **myfit-app**: Auto-switch to "Personalizado" split type when modifying workouts
+
+### Fixed
+- **myfit-app**: White text/icons on selected chips in light mode
+  - SegmentedButton, ChoiceChips, ExecutionMode toggle, ExerciseMode toggle
+
+## [1.4.0] - 2026-01-19
+
 ### Added
 - **myfit-api**: Added `target_muscles` field to AIGeneratedWorkout schema
   - AI-generated programs now include muscle groups for each workout
