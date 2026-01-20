@@ -7,8 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.5.0] - 2026-01-20
-
 ### Added
 - **myfit-app**: ExecutionMode toggle for exercise configuration
   - Three modes: Repetições (Reps), Isometria (Isometric), Combinado (Combined)
@@ -25,15 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **myfit-app**: Lock split type selection when editing existing plans
   - Disabled with info banner, selected option shown first
 
-### Fixed
-- **myfit-app**: ABC split default workouts now generate automatically on wizard load
-
-- **myfit-app**: White text/icons on selected chips in light mode
-  - SegmentedButton, ChoiceChips, ExecutionMode toggle, ExerciseMode toggle
-
-## [1.4.0] - 2026-01-19
-
-### Added
 - **myfit-api**: Added `target_muscles` field to AIGeneratedWorkout schema
   - AI-generated programs now include muscle groups for each workout
 
@@ -43,39 +32,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Exercise grouping now correctly identifies Bi-Set vs Super-Set
 
 ### Fixed
+- **myfit-app**: ABC split default workouts now generate automatically on wizard load
+
+- **myfit-app**: White text/icons on selected chips in light mode
+  - SegmentedButton, ChoiceChips, ExecutionMode toggle, ExerciseMode toggle
+
 - **myfit-api**: Fixed AI suggestion 500 error
   - Normalized technique types in AI service (isometric → normal, bi_set → biset)
   - Standardized technique type enum values (biset, triset without underscore)
 
 - **myfit-api**: Exercise groups (Bi-Set, Tri-Set, etc.) now save correctly to database
-  - `add_exercise_to_workout()` now accepts technique fields (execution_instructions, isometric_seconds, technique_type, exercise_group_id, exercise_group_order)
+  - `add_exercise_to_workout()` now accepts technique fields
   - Updated all router calls to pass technique fields through
   - `duplicate_workout()` now copies technique fields
 
 - **myfit-app**: Fixed biset/superset detection and filtering
-  - Auto-detects Bi-Set vs Super-Set based on muscle groups (antagonists = Super-Set)
+  - Auto-detects Bi-Set vs Super-Set based on muscle groups
   - Super-Set option hidden when workout has no antagonist muscle pairs
-  - Bi-Set: Peito/Ombros, Costas/Biceps (same area muscles)
-  - Super-Set: Peito/Costas, Biceps/Triceps (antagonist muscles)
   - Exercise picker filtered to only show exercises from workout's muscle groups
 
 - **myfit-app**: Improved exercise group display and reorder behavior
   - New `_ExerciseGroupCard` widget displays grouped exercises in a bordered card
-  - Group header shows technique type, exercise count, instructions button, and disband button
-  - Exercises within groups are now aligned (no indent hierarchy)
   - Reorder now moves entire groups together
-  - Compact isometric display (icon + seconds instead of "Hold Xs")
-  - Removed redundant technique chips from grouped exercises
-
-- **myfit-app**: Added loading indicator for AI suggestion button
+  - Compact isometric display
 
 - **myfit-app**: Muscle group validation for exercise techniques
-  - Super-Set requires antagonist muscle groups (Peito/Costas, Biceps/Triceps)
-  - Bi-Set/Tri-Set/Giant Set block antagonist muscles (only allow same area)
-  - Visual indicators for blocked exercises (orange border, ban icon, 50% opacity)
-  - Info banners showing required/blocked muscle groups
-  - Validation snackbars when tapping blocked exercises
-  - Reordered technique menu: Superset → Biset → Triset → Giantset
+  - Super-Set requires antagonist muscle groups
+  - Bi-Set/Tri-Set/Giant Set block antagonist muscles
+  - Visual indicators for blocked exercises
 
 ### Changed
 - Reorganized repository structure to use Git submodules
