@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **myfit-api v0.4.2**: Student invite system
+  - `POST /trainers/students/register` now creates OrganizationInvite instead of direct membership
+  - `GET /trainers/students/pending-invites` - List pending student invites
+  - Students must accept invite to join trainer's organization
+  - Prevents duplicate user creation when student registers separately
+
+- **myfit-app v1.5.3**: Pending invites support
+  - Students can see and accept organization invites in profile selector
+  - `getMyPendingInvites()` method in OrganizationService
+  - Fixed pending invites not showing after login (provider invalidation)
+  - Updated success message to "Convite enviado com sucesso!"
+
 - **myfit-api v0.4.1**: Plan management improvements
   - `clear_duration_weeks` parameter for continuous plans
   - Duplicate plan validation (409 Conflict response)
