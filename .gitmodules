@@ -10,3 +10,6 @@
 [submodule "myfit-worker"]
 	path = myfit-worker
 	url = git@github.com:marcelpiva/myfit-worker.git
+[submodule "myfit-iac"]
+	path = myfit-iac
+	url = https://github.com/marcelpiva/myfit-iac.git
