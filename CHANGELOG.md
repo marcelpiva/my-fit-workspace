@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **myfit-app v1.11.0**: Complete user journey implementation
+  - Onboarding wizard for trainers and students post-registration
+  - Plan version history UI with diff comparison
+  - Do Not Disturb (DND) settings with time pickers
+  - Batch prescription for multiple students
+  - Plan draft system with auto-save
+  - QR Code for student invites
+  - WhatsApp sharing for invites
+  - Social login (Google/Apple)
+  - Email verification with OTP
+  - User type selection (Personal/Student)
+
+- **myfit-api v0.6.1**: Smart notifications and reminders
+  - Intelligent workout reminders with varied messages
+  - Personalized timing based on user preferences
+  - Streak protection messages in evening
+  - Fixed invite reminders with email support
+  - Expiration notifications for trainers
+
 ### Fixed
 - **myfit-app v1.9.2**: Push notifications complete overhaul
   - Fixed FCM token registration endpoint
