@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **myfit-app v1.11.1**: TestFlight build 202601261235
+  - Social login routes new users to onboarding with pre-selected user type
+  - Improved error handling for network errors
+  - Disabled GlitchTip in development mode
+  - Debug logging for student onboarding data persistence
+
+- **myfit-api v0.6.2**: Production database migration
+  - Applied onboarding fields migration to production
+  - Added 11 columns to users table: specialties, years_of_experience, fitness_goal, fitness_goal_other, experience_level, weight_kg, age, weekly_frequency, injuries, injuries_other, onboarding_completed
+  - Production database now 100% synced with models (59 tables)
+
 - **myfit-app v1.11.0**: Complete user journey implementation
   - Onboarding wizard for trainers and students post-registration
   - Plan version history UI with diff comparison
