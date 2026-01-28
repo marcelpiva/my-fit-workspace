@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- **myfit-api v0.6.8**: Critical workout isolation security fixes
+  - `create_workout` now uses `X-Organization-ID` header as fallback for organization context
+  - `get_workout` and `get_workout_exercises` now verify organization membership (was allowing unauthorized access)
+  - Added 13 integration tests for workout isolation by organization
+
 - **myfit-api v0.6.7**: Critical authentication and routing fixes
   - Added `redirect_slashes=False` to prevent 307 redirects losing Authorization header
   - Fixed root endpoints in checkin, workouts, and organizations routers (changed `"/"` to `""`)
